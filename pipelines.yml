@@ -1,0 +1,19 @@
+resources:
+- repo: self
+queue:
+  name: Hosted VS2017
+steps:
+- task: Docker@0
+  displayName: 'Build the Image'
+  inputs:
+    imageName: 'pipelines/${Build.Repository.Name}:$(Build.BuildId)'
+
+
+- task: Docker@0
+  displayName: 'Push an image'
+  inputs:
+    containerregistrytype: 'Container Registry'
+    dockerRegistryConnection: DockerHub
+    action: 'Push an image'
+    imageName: 'cardboardci/awscli:windows-$(Build.BuildId)'
+

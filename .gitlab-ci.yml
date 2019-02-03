@@ -9,6 +9,7 @@ release:
   only:
     - master
   artifacts:
+    expires_in: 1 week
     paths:
       - publish/
   script:

@@ -1,0 +1,16 @@
+image: microsoft/dotnet:latest
+
+stages:
+  - "Test"
+  - "Package"
+
+release:
+  stage: deploy
+  only:
+    - master
+  artifacts:
+    paths:
+      - publish/
+  script:
+    - dotnet publish -r win-x64 -c Release -o ./publish CoreRTHello/CoreRTHello.csproj
+    

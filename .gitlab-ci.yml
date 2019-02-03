@@ -5,13 +5,12 @@ stages:
   - "Package"
 
 release:
-  stage: deploy
+  stage: "Package"
+  script:
+    - dotnet publish -r win-x64 -c Release -o ./publish CoreRTHello/CoreRTHello.csproj
   only:
     - master
   artifacts:
-    expires_in: 1 week
+    expire_in: 1 week
     paths:
       - publish/
-  script:
-    - dotnet publish -r win-x64 -c Release -o ./publish CoreRTHello/CoreRTHello.csproj
-    

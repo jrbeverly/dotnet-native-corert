@@ -12,6 +12,6 @@ steps:
   inputs:
     artifactName: publish
 
-    targetPath: publish
+    targetPath: CoreRTHello\publish\
 
 

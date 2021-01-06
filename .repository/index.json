@@ -1,0 +1,18 @@
+{
+  "slug": "dotnet-native-corert",
+  "namespace": "jrbeverly",
+  "status": "archived",
+  "icon": "icon.svg",
+  "license": {
+    "type": "MIT",
+    "content": "Jonathan Beverly <jrbeverly>"
+  },
+  "topics": [
+    "dotnet",
+    "docker",
+    "cicd"
+  ],
+  "languages": [
+    "C#"
+  ]
+}

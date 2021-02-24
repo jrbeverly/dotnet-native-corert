@@ -13,6 +13,7 @@
     "cicd"
   ],
   "languages": [
-    "C#"
+    "C#",
+    "Dockerfile"
   ]
 }

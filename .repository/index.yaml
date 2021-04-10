@@ -1,0 +1,16 @@
+slug: dotnet-native-corert
+description: A simple CI/CD pipeline making use of CoreRT to build native tooling.
+project: workbench
+namespace:
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2021
+topics: |-
+  [
+    "dotnet",
+    "docker",
+    "cicd"
+  ]
